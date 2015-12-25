@@ -5,14 +5,18 @@ float hoursRadius;
 float clockDiameter;
 
 float hourOffset;
+float canvasWidth, canvasHeight, canPadWid, canPadHgt, GoldRat;
 
 int tickSize, hourTickSize, minTickSize;
 
 void setup() {
-  size(640, 360);
+  GoldRat = getGoldenRat();
+  canvasWidth = window.innerWidth * GoldRat * GoldRat / 2;
+  canvasHeight = canvasWidth / GoldRat;
+  size(canvasWidth, canvasHeight, P3D);
 
   // Set radius of clock dependant on width and height.
-  int radius = min(width/2, height) / 2;
+  int radius = min(canvasWidth/2, canvasHeight) / 2;
   
   // Set lengths of hands based on radius of clock.
   secondsRadius = radius * 0.81;
@@ -26,8 +30,8 @@ void setup() {
   hourTickSize = 5;
   minTickSize = 2;
   // Center points of canvas.
-  cx = width / 2;
-  cy = height / 2;
+  cx = canvasWidth / 2;
+  cy = canvasHeight / 2;
 }
 
 void draw() {
@@ -41,9 +45,9 @@ void draw() {
   float h2 = h + (hourOffset * 0.5f);  
 
     pushMatrix();
-    translate(-1*(width/4), 0);
+    translate(-1*(canvasWidth/4), 0);
     drawClock1(h2, m, s);
-    translate(width/2, 0);
+    translate(canvasWidth/2, 0);
     drawClock1(h, m, s);
     popMatrix();
 
@@ -93,5 +97,9 @@ void drawClock1(float h, float m, float s){
     //vertex(x, y);
   }
   endShape();
+}
 
+float getGoldenRat(){
+  float returnRat = (1 + sqrt(5))/2;
+  return returnRat;
 }
