@@ -1,0 +1,12 @@
+Behind the curtain...
+
+https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=time%20in%20milwaukee
+https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=60%2F12
+
+https://processing.org/examples/clock.html
+https://processing.org/examples/easing.html
+https://processing.org/tutorials/transform2d/
+
+http://processingjs.org/reference/beginShape_/
+http://processingjs.org/reference/
+http://processingjs.org/reference/beginShape_/
