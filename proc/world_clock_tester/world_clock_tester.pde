@@ -49,16 +49,16 @@ void draw() {
 
     pushMatrix();
     translate(-1*(canvasWidth/4), 0);
-    drawClock1(h2, m, s);
+    drawClock1(h2, m, s, cx, cy);
     translate(canvasWidth/2, 0);
-    drawClock1(h, m, s);
+    drawClock1(h, m, s, cx, cy);
     popMatrix();
 
   
   // Draw the hands of the clock
 }
 
-void drawClock1(float h, float m, float s){
+void drawClock1(float h, float m, float s, cx, cy){
   fill(80);
   noStroke();
     
