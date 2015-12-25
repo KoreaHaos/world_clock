@@ -15,12 +15,6 @@ void setup() {
   canvasHeight = canvasWidth / getGoldenRat();
   size(canvasWidth, canvasHeight);
   
-  /*
-  size(640, 360);
-  canvasWidth = width;
-  canvasHeight = height;
-  */
-  
   // Set radius of clock dependant on width and height.
   float radius = min(canvasWidth/2, canvasHeight) / 2;
   
