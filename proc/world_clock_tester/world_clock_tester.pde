@@ -10,8 +10,8 @@ float canvasWidth, canvasHeight, goldenRat;
 int tickSize, hourTickSize, minTickSize;
 
 void setup() {
+  size(window.innerWidth / GoldRat, window.innerWidth / getGoldenRat() / getGoldenRat());
   //size(640, 360);
-  size(640, 360);
 
   canvasWidth = width;
   canvasHeight = height;
@@ -95,4 +95,8 @@ void drawClock1(float h, float m, float s, float cx, float cy){
     float y = cy + sin(angle) * secondsRadius;
     ellipse(x, y, tickSize, tickSize);
   }
+}
+float getGoldenRat(){
+  float returnRat = (1 + sqrt(5))/2;
+  return returnRat;
 }
