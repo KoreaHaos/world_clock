@@ -37,7 +37,10 @@ void setup() {
 void draw() {
   
   background(15);
-  // Angles for sin() and cos() start at 3 o'clock;
+    cx = canvasWidth / 2;
+  cy = canvasHeight / 2;
+
+// Angles for sin() and cos() start at 3 o'clock;
   // subtract HALF_PI to make them start at the top
   float s = map(second(), 0, 60, 0, TWO_PI) - HALF_PI;
   float m = map(minute() + norm(second(), 0, 60), 0, 60, 0, TWO_PI) - HALF_PI; 
