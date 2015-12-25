@@ -4,6 +4,8 @@ float minutesRadius;
 float hoursRadius;
 float clockDiameter;
 
+float hourOffset;
+
 int tickSize, hourTickSize, minTickSize;
 
 void setup() {
@@ -17,6 +19,8 @@ void setup() {
   minutesRadius = radius * 0.60;
   hoursRadius = radius * 0.50;
   clockDiameter = radius * 1.8;
+  
+  hourOffset = -3.0f;
   
   tickSize = 0;
   hourTickSize = 5;
@@ -34,13 +38,13 @@ void draw() {
   float s = map(second(), 0, 60, 0, TWO_PI) - HALF_PI;
   float m = map(minute() + norm(second(), 0, 60), 0, 60, 0, TWO_PI) - HALF_PI; 
   float h = (map(hour() + norm(minute(), 0, 60), 0, 24, 0, TWO_PI * 2) - HALF_PI);
-  float h2 = h + .5;  
+  float h2 = h + (hourOffset * 0.5f);  
 
     pushMatrix();
     translate(-1*(width/4), 0);
-    drawClock1(h, m, s);
-    translate(width/2, 0);
     drawClock1(h2, m, s);
+    translate(width/2, 0);
+    drawClock1(h, m, s);
     popMatrix();
 
   
