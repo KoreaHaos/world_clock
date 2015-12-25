@@ -71,7 +71,6 @@ void drawClock1(float h, float m, float s){
   for (int a = 0; a < 360; a+=6) {
     
     if(a%5 == 0){
-<<<<<<< HEAD
     noStroke();
     fill(0);
     tickSize = hourTickSize;
@@ -81,14 +80,6 @@ void drawClock1(float h, float m, float s){
     
     fill(255);
     tickSize = minTickSize;    
-=======
-    fill(0);
-    stroke(0);
-    }
-    else {
-    fill(255);
-    stroke(255);
->>>>>>> origin/gh-pages
     }
     
     float angle = radians(a);
