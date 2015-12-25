@@ -10,8 +10,8 @@ float canvasWidth, canvasHeight, goldenRat;
 int tickSize, hourTickSize, minTickSize;
 
 void setup() {
-  size(window.innerWidth / GoldRat, window.innerWidth / getGoldenRat() / getGoldenRat());
-  //size(640, 360);
+  //size(window.innerWidth / GoldRat, window.innerWidth / getGoldenRat() / getGoldenRat());
+  size(640, 360);
 
   canvasWidth = width;
   canvasHeight = height;
