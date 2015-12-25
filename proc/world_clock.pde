@@ -66,11 +66,11 @@ void drawClock1(float h, float m, float s){
   for (int a = 0; a < 360; a+=6) {
     
     if(a%5 == 0){
-    strokeWeight(10);
+    fill(0);
     stroke(0);
     }
     else {
-    strokeWeight(1);
+    fill(255);
     stroke(255);
     }
     
