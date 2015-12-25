@@ -4,6 +4,8 @@ float minutesRadius;
 float hoursRadius;
 float clockDiameter;
 
+int tickSize, hourTickSize, minTickSize;
+
 void setup() {
   size(640, 360);
 
@@ -15,7 +17,10 @@ void setup() {
   minutesRadius = radius * 0.60;
   hoursRadius = radius * 0.50;
   clockDiameter = radius * 1.8;
-
+  
+  tickSize = 0;
+  hourTickSize = 5;
+  minTickSize = 2;
   // Center points of canvas.
   cx = width / 2;
   cy = height / 2;
@@ -66,18 +71,22 @@ void drawClock1(float h, float m, float s){
   for (int a = 0; a < 360; a+=6) {
     
     if(a%5 == 0){
-    strokeWeight(5);
-    stroke(0);
+    noStroke();
+    fill(0);
+    tickSize = hourTickSize;
     }
     else {
-    strokeWeight(1);
-    stroke(255);
+    noStroke();
+    
+    fill(255);
+    tickSize = minTickSize;    
     }
     
     float angle = radians(a);
     float x = cx + cos(angle) * secondsRadius;
     float y = cy + sin(angle) * secondsRadius;
-    vertex(x, y);
+    ellipse(x, y, tickSize, tickSize);
+    //vertex(x, y);
   }
   endShape();
 
