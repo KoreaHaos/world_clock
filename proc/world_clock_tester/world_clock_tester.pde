@@ -11,7 +11,7 @@ int tickSize, hourTickSize, minTickSize;
 
 void setup() {
   GoldRat = getGoldenRat();
-  canvasWidth = window.innerWidth * GoldRat * GoldRat / 2;
+  canvasWidth = window.innerWidth / GoldRat;;
   canvasHeight = canvasWidth / GoldRat;
   size(canvasWidth, canvasHeight, P3D);
 
