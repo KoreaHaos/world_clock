@@ -6,21 +6,24 @@ float clockDiameter;
 
 void setup() {
   size(640, 360);
-  stroke(255);
-  
+
+  // Set radius of clock dependant on width and height.
   int radius = min(width/2, height) / 2;
   
+  // Set lengths of hands based on radius of clock.
   secondsRadius = radius * 0.81;
   minutesRadius = radius * 0.60;
   hoursRadius = radius * 0.50;
   clockDiameter = radius * 1.8;
-  
+
+  // Center points of canvas.
   cx = width / 2;
   cy = height / 2;
 }
 
 void draw() {
-  background(255);
+  
+  background(15);
   // Angles for sin() and cos() start at 3 o'clock;
   // subtract HALF_PI to make them start at the top
   float s = map(second(), 0, 60, 0, TWO_PI) - HALF_PI;
