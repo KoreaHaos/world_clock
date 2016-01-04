@@ -9,6 +9,8 @@ float canvasWidth, canvasHeight, goldenRat;
 
 int tickSize, hourTickSize, minTickSize;
 
+// ToDo FIX RESIZING!
+
 void setup() {
   
   canvasWidth = window.innerWidth / getGoldenRat();
