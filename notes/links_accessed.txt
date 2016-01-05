@@ -1,5 +1,21 @@
 Behind the curtain...
 
+[1/5/15 BROWSER DUMP]
+http://www.w3schools.com/html/html_lists.asp
+http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_id
+http://www.w3schools.com/css/css_list.asp
+http://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-position
+http://www.w3schools.com/cssref/pr_list-style.asp
+http://www.w3schools.com/html/html_links.asp
+http://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_target
+http://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_w3schools
+http://stackoverflow.com/questions/1269589/css-center-block-but-align-contents-to-the-left
+http://stackoverflow.com/questions/3355058/can-i-center-a-ul-with-left-aligned-lis
+https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=css+left+justify+center+list
+http://jsbin.com/atizi4/37/edit?html,output
+http://www.htmlgoodies.com/beyond/css/article.php/3470331
+
+[First Days]
 https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=time%20in%20milwaukee
 https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=60%2F12
 
