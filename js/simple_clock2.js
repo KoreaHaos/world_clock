@@ -8,7 +8,7 @@ function startTime() {
     s = checkTime(s);
     document.getElementById('cur_loc_time').innerHTML = "Current Location<br> Time = " + h1 + ":" + m + ":" + s;
     document.getElementById('2nd_loc_time').innerHTML = "Second Location<br> Time = " + h2 + ":" + m + ":" + s;
-    document.getElementById('algo_data').innerHTML = "Data, Data, Data!<br><br>" + h2 + ":" + m + ":" + s;
+    document.getElementById('algo_data').innerHTML = "<br>Data, Data, Data!<br><br>" + h2 + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
 }
 
