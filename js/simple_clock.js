@@ -1,12 +1,13 @@
 function startTime() {
     var today = new Date();
-    var h = today.getHours();
+    var h1 = today.getHours();
+    var h2 = (h1 - 13)%24;
     var m = today.getMinutes();
     var s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    document.getElementById('cur_loc_time').innerHTML = "Current Location<br> Time = " + h + ":" + m + ":" + s;
-    document.getElementById('2nd_loc_time').innerHTML = "Second Location<br> Time = " + h + ":" + m + ":" + s;
+    document.getElementById('cur_loc_time').innerHTML = "Current Location<br> Time = " + h1 + ":" + m + ":" + s;
+    document.getElementById('2nd_loc_time').innerHTML = "Second Location<br> Time = " + h2 + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
 }
 
