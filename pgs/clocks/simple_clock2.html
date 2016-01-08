@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+
+  <link rel="stylesheet" type="text/css" href="../../css/world-clock1.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="../../css/haos_basic.css" media="screen">
+  <title>Simple Clock</title>
+  <script src="../../js/simple_clock1.js"></script>
+  <script>
+    window.onresize = function() {
+      location.reload();
+    }
+  </script>
+  <style>
+    canvas {
+      padding: 0;
+      margin: auto;
+      display: block;
+    }
+  </style>
+</head>
+
+<body onload="startTime()">
+  <header>
+    <div class="container">
+      <h1>simple_clock</h1>
+      <h2>The Basics.</h2>
+    </div>
+  </header>
+  <div id="haos_centered_div">
+    <h1>Build, Build, Building!</h1>
+    <h2>Test, Test, Testing!</h2>
+    <p>A little voice says this is not going to work correctly...</p>
+    <div id="cur_loc_time">
+    </div>
+    <div id="2nd_loc_time">
+    </div>
+  </div>
+</body>
+
+</html>
