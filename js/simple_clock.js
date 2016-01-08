@@ -5,8 +5,8 @@ function startTime() {
     var s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    document.getElementById('cur_loc_time').innerHTML = "Current Location = " +
-        h + ":" + m + ":" + s;
+    document.getElementById('cur_loc_time').innerHTML = "Current Location = " + h + ":" + m + ":" + s;
+    document.getElementById('2nd_loc_time').innerHTML = "Location 2 Time  = " + h + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
 }
 
