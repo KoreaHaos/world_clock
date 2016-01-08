@@ -11,6 +11,11 @@ div#haos_centered_div {
   display: inline-block;
 }
 
+#haos_centered_div table {
+  display: inline-block;
+  border: 50px;
+}
+
 .haos_green {
   color: green;
 }

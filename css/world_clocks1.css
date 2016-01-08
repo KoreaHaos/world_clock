@@ -1,0 +1,13 @@
+.hrow {
+    font-weight: bold;
+    color: #C1E97C;
+}
+
+.hrow td {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 140px;
+}
+
+/* source : http://www.proglogic.com/code/javascript/time/worldclock.php */
