@@ -1,7 +1,7 @@
 function startTime() {
     var today = new Date();
     var h1 = today.getHours();
-    var h2 = (h1 - 13)%24;
+    var h2 = (h1 - 11)%24;
     var m = today.getMinutes();
     var s = today.getSeconds();
     m = checkTime(m);
